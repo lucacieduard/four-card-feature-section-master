@@ -1,0 +1,161 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html {
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(0, 0%, 98%);
+    font-size:16px;
+    font-family:"Poppins", sans-serif;
+}
+
+body{
+    max-width:400px;
+    margin:0 auto;
+    width:100%;
+}
+
+p {
+    color: hsl(229, 6%, 66%);
+}
+
+header{
+    margin:4rem auto 2rem auto;
+    text-align:center;
+    padding:0 1.5rem;
+}
+
+    header h2 {
+        font-weight: 200;
+        color: hsl(229, 6%, 66%);
+        margin-bottom:0.5rem;
+        font-size:1.5rem;
+    }
+
+header h1{
+    font-weight:600;
+    font-size:1.5rem;
+    margin-bottom:1rem;
+    text-align:center;
+}
+
+header p{
+    font-weight:400;
+    font-size:1rem;
+}
+
+h1,h3{
+    color: hsl(234, 12%, 34%);
+}
+
+main{
+    display:flex;
+    flex-direction:column;
+    padding:0 1.5rem;
+}
+
+.card {
+    margin-top: 2rem;
+    background-color: white;
+    border-top: 5px solid black;
+    border-radius: 5px;
+    padding-left: 1.5rem;
+    padding-top: 1rem;
+    padding-right: 1.5rem;
+    box-shadow: 0px 15px 20px hsl(0, 0%, 79%);
+}
+
+.card svg{
+    margin:1rem 1rem 0.7rem 75%;
+    margin-bottom:1rem;
+    
+}
+
+.card-title{
+    margin-top:1.4rem;
+    margin-bottom:1rem;
+    font-weight:600;
+    letter-spacing:1px;
+}
+
+.card-description{
+    margin-bottom:0.8rem;
+}
+
+.cyan {
+    border-color: hsl(180, 62%, 55%);
+}
+
+.red {
+    border-color: hsl(0, 78%, 62%);
+}
+
+.blue {
+    border-color: hsl(212, 86%, 64%);
+}
+
+.orange {
+    border-color: hsl(34, 97%, 64%);
+}
+
+.attribution{
+    margin-top:2rem;
+    padding-bottom:1.5rem;
+    font-size:0.78rem;
+    text-align:center;
+}
+
+    .attribution a {
+        text-decoration: none;
+        color: hsl(228, 45%, 44%);
+    
+ }
+
+@media(min-width:1100px){
+    body{
+        max-width:none;
+        min-width:none;
+        width:100%;
+        }
+
+    main{
+        flex-direction:row;
+        align-items:center;
+        padding:0;
+        margin:0 auto;
+        justify-content:space-evenly;
+        width:100%;
+        max-width:none;
+    }
+    header{
+        width:40%;
+        margin-top:1rem;
+    }
+    div .card, .card{
+        margin-top:0;
+        max-width:350px;
+        max-height:240px;
+    }
+
+    div .card:nth-of-type(2){
+        margin-top:1.3rem;
+    }
+
+    .group{
+        display:flex;
+        flex-direction:column;
+        height:100%;
+        justify-content:space-evenly;
+    }
+
+    header h2{
+        font-size: 2rem;
+    }
+
+    header h1{
+        font-size: 2rem;
+    }
+
+}
